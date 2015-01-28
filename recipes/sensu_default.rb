@@ -18,19 +18,19 @@ package "sensu"
 package "uchiwa"
 
 service "sensu-server" do
-  action [ :enable ]
+  action :enable
 end
 
 service "sensu-api" do
-  action [ :enable ]
+  action :enable
 end
 
 service "sensu-client" do
-  action [ :enable ]
+  action :enable
 end
 
 service "uchiwa" do
-  action [ :enable ]
+  action :enable
 end
 
 directory '/etc/sensu/ssl/' do
@@ -100,17 +100,17 @@ gem_package 'aws-ses' do
 end
 
 service "sensu-server" do
-  action [ :start ]
+  action :start
 end
 
 service "sensu-api" do
-  action [ :start ]
+  action :start
 end
 
 service "sensu-client" do
-  action [ :start ]
+  action :start
 end
 
 service "uchiwa" do
-  action [ :start ]
+  action :start
 end

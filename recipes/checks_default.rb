@@ -28,17 +28,17 @@ cookbook_file '/etc/sensu/conf.d/check_apache.json' do
 end
 
 service "sensu-server" do
-  action [ :restart ]
+  action :restart
 end
 
 service "sensu-api" do
-  action [ :restart ]
+  action :restart
 end
 
 service "sensu-client" do
-  action [ :restart ]
+  action :restart
 end
 
 service "uchiwa" do
-  action [ :restart ]
+  action :restart
 end

@@ -8,8 +8,8 @@
               "warning",
               "critical"
             ],
-            "mail_from": "",
-            "mail_to": ""
+            "mail_from": "sensu@example.com",
+            "mail_to": "monitor@example.com"
         }
     }
 }
